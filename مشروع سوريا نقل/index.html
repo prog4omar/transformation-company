@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة الشحن الداخلي</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts - Tajawal for Arabic -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar - طبقة واحدة فقط -->
+  <div class="navbar">
+    <!-- الشعار على اليمين -->
+    <img src="img/image.png" alt="شعار الشركة" class="logo">
+
+    <!-- الروابط في المنتصف -->
+    <ul class="nav-links">
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#about">حول الشركة</a></li>
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#testimonials">آراء العملاء</a></li>
+      <li><a href="https://wa.me/+9647836207596" target="_blank">اتصل بنا</a></li>
+    </ul>
+
+    <!-- القسم الأيمن (زر تسجيل الدخول وزر الوضع الليلي) -->
+    <div class="right-section">
+      <!-- زر تسجيل الدخول / حالة المستخدم -->
+      <div class="auth-section" id="authSection">
+        <a href="#" class="login-btn" onclick="openLoginModal()">تسجيل الدخول</a>
+        
+      </div>
+      
+      <!-- زر التبديل إلى الوضع الليلي -->
+      <button class="theme-toggle" id="themeToggle" title="تبديل الوضع الليلي">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="main">
+    <div class="main-text">
+      <h1>شركة AKOO للشحن والنقل الداخلي</h1>
+      <p>
+        نُقدّم لك حلول شحن متكاملة داخل سوريا، تجمع بين السرعة والأمان والموثوقية.
+        هدفنا أن يكون توصيلك سلسًا، ووصولك دائمًا في الوقت المناسب — لأنك تستحق الأفضل.
+      </p>
+      <a href="#" class="btn" onclick="openModal()">اطلب خدمة الآن</a>
+    </div>
+    <img src="img/img.png" alt="شاحنة النقل">
+  </div>
+
+  <!-- قسم حول الشركة -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="img/about.jpeg" alt="فريق شركة AKOO">
+      </div>
+      <div class="about-text">
+        <h2>من نحن</h2>
+        <p>
+          شركة <strong>AKOO</strong> هي واحدة من أبرز شركات الشحن والنقل الداخلي في سوريا، حيث نُقدّم حلول لوجستية موثوقة وسريعة تغطي جميع المحافظات السورية.
+        </p>
+        <p>
+          منذ تأسيسنا، حرصنا على بناء شراكات قوية مع المتاجر الإلكترونية والأفراد والمؤسسات، من خلال التزامنا بأعلى معايير الجودة، السرعة، والأمان في تسليم الشحنات.
+        </p>
+        <p>
+          نعتمد على فريق عمل مدرب، شبكة توزيع واسعة، ونظام تتبع ذكي يضمن وصول شحنتك في الوقت المحدد، وبأقل تكلفة ممكنة.
+        </p>
+        <p>
+          مهمتنا بسيطة: <strong>أن نكون الجسر الآمن والموثوق بينك وبين عميلك</strong> — داخل سوريا، من أي مكان إلى أي مكان.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم خدماتنا -->
+  <section id="services" class="service-section">
+    <div class="section-header">
+      <h2>خدماتنا</h2>
+    </div>
+
+    <div class="service-row">
+      <div class="service-text">
+        <h2>توصيل محلي سريع</h2>
+        <ul>
+          <li>عمليات توصيل موثوقة وفي الوقت المحدد.</li>
+          <li>خدمة التوصيل في نفس اليوم واليوم التالي.</li>
+          <li>الدفع عند الاستلام مع تسويات سريعة.</li>
+          <li>تكامل كامل مع المتاجر الإلكترونية.</li>
+        </ul>
+      </div>
+      <div class="service-image">
+        <img src="servers img/servers  2.jpeg" alt="توصيل محلي">
+      </div>
+    </div>
+
+    <div class="service-row reverse">
+      <div class="service-text">
+        <h2>شحن بين المحافظات السورية</h2>
+        <ul>
+          <li>توصيل سريع وآمن بين المحافظات.</li>
+          <li>خدمات توصيل موثوقة ودقيقة.</li>
+          <li>تغطية شاملة لكل المحافظات السورية</li>
+          <li>نوصّل شحنتك من محافظة إلى أخرى</li>
+        </ul>
+      </div>
+      <div class="service-image">
+        <img src="servers img/servers 1.jpeg" alt="توصيل دولي">
+      </div>
+    </div>
+
+    <div class="service-row">
+      <div class="service-text">
+        <h2>إدارة المرتجعات</h2>
+        <ul>
+          <li>إجراءات مرنة وسريعة.</li>
+          <li>استلام المرتجعات من باب العميل.</li>
+          <li>تتبع فوري لحالة المرتجع.</li>
+          <li>إعادة البيع أو التخزين.</li>
+        </ul>
+      </div>
+      <div class="service-image">
+        <img src="servers img/servers 3.jpeg" alt="إدارة المرتجعات">
+      </div>
+    </div>
+
+    <div class="service-row reverse">
+      <div class="service-text">
+        <h2>تنفيذ متكامل للخدمات</h2>
+        <ul>
+          <li>حلول شحن وتخزين متكاملة.</li>
+          <li>خدمة من الباب إلى الباب.</li>
+          <li>خيارات تخزين مرنة.</li>
+          <li>دعم لوجستي شامل.</li>
+        </ul>
+      </div>
+      <div class="service-image">
+        <img src="servers img/servers 4.png" alt="خدمات متكاملة">
+      </div>
+    </div>
+  </section>
+
+  <!-- نافذة طلب الخدمة -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2>طلب خدمة شحن</h2>
+        <p>اختر مواقع الاستلام والتسليم</p>
+      </div>
+      
+      <form id="shippingForm">
+        <!-- مركز الاستلام -->
+        <div class="form-section">
+          <h3><i class="fas fa-map-marker-alt"></i> مركز الاستلام</h3>
+          <div class="form-group">
+            <label for="pickupGov">اختر المحافظة:</label>
+            <select id="pickupGov" onchange="updatePickupCities()" required>
+              <option value="">-- اختر المحافظة --</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pickupCity">اختر المدينة:</label>
+            <select id="pickupCity" disabled required>
+              <option value="">-- اختر المدينة --</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- مركز التسليم -->
+        <div class="form-section">
+          <h3><i class="fas fa-truck"></i> مركز التسليم</h3>
+          <div class="form-group">
+            <label for="deliveryGov">اختر المحافظة:</label>
+            <select id="deliveryGov" onchange="updateDeliveryCities()" required>
+              <option value="">-- اختر المحافظة --</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="deliveryCity">اختر المدينة:</label>
+            <select id="deliveryCity" disabled required>
+              <option value="">-- اختر المدينة --</option>
+            </select>
+          </div>
+
+          <!-- طريقة التسليم -->
+          <div class="form-group">
+            <div class="radio-options">
+              <label class="radio-label">
+                <input type="radio" name="deliveryType" value="client" onclick="toggleLocation(false)" required>
+                <span class="radio-text">إنت توصل الطلب</span>
+              </label>
+              
+              <label class="radio-label">
+                <input type="radio" name="deliveryType" value="company" onclick="toggleLocation(true)">
+                <span class="radio-text">نحنا نأتي إليك</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" id="locationField" style="display:none;">
+            <label for="clientLocation">حدد موقعك:</label>
+            <input type="text" id="clientLocation" placeholder="اكتب عنوانك بالتفصيل">
+          </div>
+        </div>
+
+        <!-- معلومات الاتصال -->
+        <div class="form-section">
+          <h3><i class="fas fa-phone"></i> معلومات الاتصال</h3>
+          <div class="form-group">
+            <label for="whatsapp">رقم الهاتف / واتساب:</label>
+            <input type="tel" id="whatsapp" placeholder="09xxxxxxxx" required>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> تأكيد الطلب
+        </button>
+        
+        <p class="form-note">
+          <i class="fas fa-info-circle"></i> سنقوم بالتواصل معك خلال 24 ساعة لتأكيد الطلب وتحديد التفاصيل
+        </p>
+      </form>
+    </div>
+  </div>
+
+  
+<!-- نافذة تسجيل الدخول -->
+ 
+<div id="loginModal" class="modal login-modal">
+  <div class="modal-content login-content">
+    <span class="close" onclick="closeLoginModal()">&times;</span>
+    <div class="login-header">
+      <div class="login-logo">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <h2>تسجيل الدخول</h2>
+      <p class="login-subtitle">ادخل بياناتك للوصول إلى حسابك</p>
+    </div>
+    
+    <form id="loginForm">
+      <div class="form-group">
+        <div class="input-with-icon">
+          <i class="fas fa-user input-icon"></i>
+          <input type="text" id="loginUsername" placeholder="اسم المستخدم" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="input-with-icon">
+          <i class="fas fa-lock input-icon"></i>
+          <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+          <button type="button" class="toggle-password" onclick="togglePasswordVisibility()">
+            <i class="fas fa-eye"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="form-options">
+        <label class="checkbox-label">
+          <input type="checkbox" id="rememberMe">
+          <span class="checkmark"></span>
+          <span class="checkbox-text">تذكرني</span>
+        </label>
+        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+      </div>
+      
+      <button type="submit" class="submit-btn login-submit-btn">
+        <i class="fas fa-sign-in-alt"></i>
+        <span>دخول</span>
+      </button>
+      
+      <div class="login-footer">
+        <p>ليس لديك حساب؟ <a href="#">سجل الآن</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!--   بداية التعليقات   -->
+<section class="testimonials" id="testimonials">
+    <h2>تجارب الشحن المحلي</h2>
+    <p class="desc">آراء العملاء حول الشحن المحلي داخل سوريا وخبراتهم مع التوصيل المحلي</p>
+
+    <div class="testimonials-container">
+
+        <div class="testimonial">
+            <div class="testimonial-header">
+                <a href="img/user.png" target="_blank"><img src="img/1276eca33a37f42d9b95c962ef77b78f.jpg" alt=""></a>
+                <div class="info">
+                    <h3>سليم الموسى</h3>
+                    <span class="job">طباخ</span>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="comment">
+                الشحن المحلي كان سريعًا وآمنًا، وصلت الشحنة دون أي تلف وبوقت مناسب.
+            </p>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-header">
+                                <a href="img/user.png" target="_blank"><img src="img/1276eca33a37f42d9b95c962ef77b78f.jpg" alt=""></a>
+                <div class="info">
+                    <h3>ليلى نبيل</h3>
+                    <span class="job">منسقة شحن</span>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="comment">
+                تنسيق الشحن كان ممتازًا؛ التوصيل داخل سوريا سريع وتتبع الشحنة واضح وموثوق.
+            </p>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-header">
+                                <a href="img/user.png" target="_blank"><img src="img/1276eca33a37f42d9b95c962ef77b78f.jpg" alt=""></a>
+                <div class="info">
+                    <h3>حسان مراد</h3>
+                    <span class="job">سائق توصيل</span>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="comment">
+                الشحن داخل سوريا يتم بسلاسة، المواعيد دقيقة والشحن يصل بأمان.
+            </p>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-header">
+                                <a href="img/user.png" target="_blank"><img src="img/1276eca33a37f42d9b95c962ef77b78f.jpg" alt=""></a>
+                <div class="info">
+                    <h3>ميساء طعمة</h3>
+                    <span class="job">ربة منزل</span>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="comment">
+                خدمة الشحن المحلي في حلب كانت منظمة والأسعار واضحة ومناسبة.
+            </p>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-header">
+                                <a href="img/user.png" target="_blank"><img src="img/1276eca33a37f42d9b95c962ef77b78f.jpg" alt=""></a>
+                <div class="info">
+                    <h3>نادر خليل</h3>
+                    <span class="job">تاجر</span>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="comment">
+                الشحنة وصلت خلال يومين إلى ريف دمشق وبحالة ممتازة — أنصح باستخدامهم للشحن المحلي.
+            </p>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-header">
+                                <a href="img/user.png" target="_blank"><img src="img/1276eca33a37f42d9b95c962ef77b78f.jpg" alt=""></a>
+                <div class="info">
+                    <h3>عبدالله العيسى</h3>
+                    <span class="job">طالب جامعي</span>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="comment">
+                الشحن المحلي في مدينتي سريع وموثوق؛ استلمت طلبي خلال يوم واحد بحالة سليمة.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- نهاية تعليقات -->
+
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- الخريطة -->
+      <div class="footer-map">
+        <h3>موقعنا</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.608850072051!2d36.2912768!3d33.5136035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f170c3a7d0d1d%3A0x5c0e0c5e4e6a8b2e!2z2KfZhNmE2YXYqSDZhNmE2KfZhNi5INin2YTZhNmF2Kkg2KfZhNmE2YXYqSAoQUtPTykg2KfZhNmE2YXYqQ!5e0!3m2!1sar!2ssy!4v1712345678901!5m2!1sar!2ssy"
+          width="100%"
+          height="220"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+        <p style="margin-top: 10px; font-size: 0.95em; color: #bbb;">
+          شركة AKOO للشحن – دمشق، سوريا
+        </p>
+      </div>
+
+      <!-- معلومات التواصل + السوشيال ميديا -->
+      <div class="footer-info">
+        <h3>تواصل معنا</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> دمشق، سوريا</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+963912345678">963912345678+</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/963912345678" target="_blank">واتساب</a></li>
+          <li><i class="fas fa-envelope"></i> info@akoo-ship.sy</li>
+        </ul>
+
+        <h3 style="margin-top: 25px;">تابعنا</h3>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank" title="فيسبوك">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" title="انستغرام">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/963912345678" target="_blank" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://t.me/yourusername" target="_blank" title="تيليجرام">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 شركة AKOO للشحن والنقل الداخلي. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- ملف الجافا سكريبت -->
+  <script src="script.js"></script>
+</body>
+</html>
